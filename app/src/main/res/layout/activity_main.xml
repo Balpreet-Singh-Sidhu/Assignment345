@@ -84,6 +84,9 @@
         android:id="@+id/seekBar"
         android:layout_width="274dp"
         android:layout_height="25dp"
+        android:indeterminate="false"
+        android:max="10"
+        android:progress="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.169"
@@ -92,9 +95,9 @@
         app:layout_constraintVertical_bias="0.387" />
 
     <TextView
-        android:id="@+id/textview1"
-        android:layout_width="35dp"
-        android:layout_height="16dp"
+        android:id="@+id/textView7"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
         android:layout_below="@+id/seekBar"
         android:layout_alignLeft="@+id/seekBar"
         android:textSize="20dp"
@@ -122,6 +125,7 @@
     <RadioGroup
         android:layout_width="232dp"
         android:layout_height="106dp"
+        android:id="@+id/rg1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -153,6 +157,7 @@
         android:layout_width="215dp"
         android:layout_height="52dp"
         android:text="Calculate Total Price"
+        android:onClick="calculateTotalPrice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -200,6 +205,7 @@
         android:layout_width="239dp"
         android:layout_height="52dp"
         android:text="Submit"
+        android:onClick="submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
