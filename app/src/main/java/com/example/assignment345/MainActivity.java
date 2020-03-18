@@ -178,16 +178,17 @@ public class MainActivity extends AppCompatActivity {
             Double cost = Double.parseDouble(etext2.getText().toString());
 
             if (myDb.addOrder(foodName, price, quantity, tip
-            , tax, cost)){
+            , tax, cost))
+            {
                 Toast.makeText(this, "Order added",
                         Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this,MainActivity.class);
+                Intent intent = new Intent(this,Main2Activity.class);
                 startActivity(intent);
             }
-                else
-                    Toast.makeText(this, "Order not added",
-                            Toast.LENGTH_SHORT).show();
-
+                else {
+                Toast.makeText(this, "Order not added",
+                        Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
